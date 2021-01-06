@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位：如果父级元素未定位或没有父级元素，则按照浏览器作为参照点移动位置。
+        如果父级有定位，则以最近一个父级元素作为参照点移动位置 */
+        /* 子绝父相 */
+        
+        .father {
+            position: relative;
+            width: 500px;
+            height: 800px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        
+        .son {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 200px;
+            height: 400px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+
+</body>
+
+</html>
