@@ -1,0 +1,93 @@
+* {
+    /* 消除网页默认内外边距 */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /* 消除li前面的黑点 */
+    list-style: none;
+}
+
+
+/* 开始tb-promo */
+
+.tb-promo {
+    /* 子绝父相 */
+    position: relative;
+    width: 520px;
+    height: 280px;
+    background-color: red;
+    /* 盒子居中 */
+    margin: 50px auto;
+}
+
+
+/* 图片设置 */
+
+.tb-promo img {
+    width: 100%;
+    margin: auto;
+}
+
+.prev,
+.next {
+    /* 绝对定位 */
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    /* 文字居中对齐 */
+    text-align: center;
+    line-height: 30px;
+    /* 消除链接下划线 */
+    text-decoration: none;
+}
+
+.prev:hover {
+    background-color: #ff5000;
+}
+
+.next:hover {
+    background-color: #ff5000;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 15px 0px 0 15px;
+}
+
+
+/* 低侧圆点编辑 */
+
+.tb-promo .promo-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.promo-nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 3px;
+}
+
+.promo-nav li:hover {
+    background-color: #ff5000;
+}

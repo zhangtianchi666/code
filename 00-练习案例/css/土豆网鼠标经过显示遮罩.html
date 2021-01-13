@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kuangjia {
+            /* 子绝父相 */
+            position: relative;
+            width: 448px;
+            height: 252px;
+            margin: 0 auto;
+        }
+        
+        .zhezhao {
+            /* 隐藏元素 */
+            display: none;
+            /* 子绝父相 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 448px;
+            height: 252px;
+            background: rgba(0, 0, 0, .3) url(images/arr.png) no-repeat center;
+        }
+        
+        .zhezhao img {
+            top: 50%;
+            margin-left: 224px;
+        }
+        /* 鼠标经过框架时让遮罩显示出来 */
+        
+        .kuangjia:hover .zhezhao {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kuangjia">
+        <div class="zhezhao">
+        </div>
+        <img src="images/tudou.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 边框与文字存在缝隙 使用vertical-align: bottom;或者将转换成块元素解决：display: block;就可以解决 */
+            border: 2px solid red;
+        }
+        
+        img {
+            vertical-align: bottom;
+            /* 转换成块元素 */
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/ldh.jpg" alt="">
+    </div>
+</body>
+
+</html>
