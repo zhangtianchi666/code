@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            /* 给li一个相对定位 */
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+            /* 消除li前面的黑点 */
+            list-style: none;
+            /* 让margin取负值两个盒子边框就重叠起来 */
+            margin-left: -1px;
+        }
+        /* 若设置鼠标经过盒子时边框变色，会发现有一个边被覆盖 */
+        /* ul li:hover {
+            border: 1px solid blue;
+        } */
+        /* 若想鼠标经过边框时，显示完整，则需要用到z-index（在有定位的情况下）；
+        或者使用相对定位来实现 */
+        
+        ul li:hover {
+            border: 1px solid blue;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
