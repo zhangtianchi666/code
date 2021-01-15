@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dahe {
+            width: 200px;
+            height: 30px;
+            margin: 0 auto;
+            line-height: 30px;
+            border: 1px solid #E1251B;
+        }
+        
+        .xiaohe {
+            position: relative;
+            float: left;
+            width: 115px;
+            height: 30px;
+            background-color: #E1251B;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .sanjiao {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-width: 30px 15px 0 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+        }
+        
+        .baba {
+            font-size: 12px;
+            color: #999999;
+            text-decoration: line-through;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dahe">
+        <span class="xiaohe">
+            ¥3949.00
+            <i class="sanjiao"></i>
+        </span>
+        <span class="baba">¥3999.00</span>
+    </div>
+</body>
+
+</html>
